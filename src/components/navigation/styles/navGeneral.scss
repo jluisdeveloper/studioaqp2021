@@ -1,0 +1,189 @@
+@import '../../../stylesheets/variables.scss';
+
+.header_main{ 
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
+  padding: 0;
+  transition: opacity .15s ease-in-out;
+}
+
+.header_container {
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 63px;
+  padding-left: 213px;
+  padding-right: 120px;
+}
+
+.navigation { 
+  transform: none!important;
+  background: $blue;
+  display: block;
+  height: auto;
+  z-index: 101;
+  width: 130px;
+  max-width: 130px;
+  min-width: 130px;
+  transition: all .4s;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.menu_out {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  background: $blue;
+  z-index: 99;
+  overflow: hidden;
+  height: 0;
+  transition: all .5s cubic-bezier(1,0,0,1) 0ms;
+  max-height: 100%;
+  min-width: 0;  
+}
+
+.menu_out_active {
+  @extend .menu_out;
+  width: calc(((100% - 130px) * 2/3) + 130px);
+  max-width: calc(((100% - 130px) * 2/3) + 130px);
+  min-width: 600px;
+  height: 100vh !important;
+}
+
+.menu_overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .6s;
+  background: rgba(0,0,0,.5);
+}
+
+.menu_overlay_active {
+  @extend .menu_overlay;
+  opacity: 1;
+  visibility: visible;
+  cursor: pointer;
+}
+
+.menu_inner {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background: $blue;
+  padding: 0;
+  padding: 20%;
+  padding-right: 0;
+  counter-reset: menu;
+  min-width: 600px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.menu_item_container {
+  padding-top: 2px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.menu_item_container_active {
+  @extend .menu_item_container;
+  transition-delay: .65s;
+}
+
+.menu_item {
+  transition-delay: .05s;
+  transform: translate3d(0,calc(100% + 15px),0);
+  transition: all .5s;
+  counter-increment: menu;
+  color: $white;
+  text-decoration: none;
+  transition: all .5s;
+  display: inline-block;
+  position: relative;
+  padding: 0 15px;
+  padding-right: 30px;
+  // toke personal
+  font-family: $oswald;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: 800;
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top:25px;
+    right: 0;
+    background: hsla(0,0%,100%,.3);
+    height: 7%;
+    transform-origin: left center;
+    transform: scaleX(0);
+    transition: transform .4s cubic-bezier(1,0,0,1) 0ms;
+  }
+  &:hover {
+    color: $white;
+    text-decoration: none;
+    &:before { 
+      transform: scaleX(1);
+    }
+  }
+}
+
+//  LOGO POSITION IN OVERLAY AND outside
+
+.logo_in_overlay_menu {
+  position: absolute;
+  top: 63px;
+  margin-left: 15px;
+  transition: opacity .15s ease-in-out;
+  display: block;
+  &:hover{
+    opacity: .5;
+  }
+  img {
+    height: 25px;
+    display: block;
+  }
+}
+
+.menu_item_active {
+  @extend .menu_item;
+  transition-delay: .55s;
+  transform: translateZ(0);
+}
+
+.logo_inner_title {
+  margin-top: 0;
+  a {
+    transition: opacity .15s ease-in-out;
+    display: block;
+    &:hover{
+      opacity: .5;
+    }
+    img {
+      height: 25px;
+      display: block;
+    }
+  }
+}

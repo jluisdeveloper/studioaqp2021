@@ -1,23 +1,19 @@
+import React from 'react'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
+import HomePage from './pages/home'
+import SinglePostPage from './pages/singlePost'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+      <Switch>
+        <Route path="/" exact={true} name="index" component={HomePage} />
+        <Route path="/post" exact={true} name="singlePost" component={SinglePostPage} />
+      </Switch>
+    </BrowserRouter>
+  )
 }
 
-export default App;
+export default App
+

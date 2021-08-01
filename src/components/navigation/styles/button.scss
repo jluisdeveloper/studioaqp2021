@@ -1,0 +1,76 @@
+@import '../../../stylesheets/variables.scss';
+.toggle_menu {        // pg-toggle
+  z-index: 102;
+  padding: 0;
+  position: fixed;
+  width: 130px;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.animation {        // pg-toggle--animation
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: $blue;
+}
+
+.icon {       //  pg-toggle--icon
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 15px;
+  transform: translate(-50%,-50%);
+}
+
+.lines {    //  pg-toggle--lines
+  position: relative;
+  transform: translateY(5px);
+  background: $white;
+  transition: all 0ms .3s;
+  left: 5px;
+  width: 14px;
+  height: 2px;
+  &:after, &:before {
+    content: "";
+    position: absolute;
+    left: -5px;
+    background: $white;
+    width: 14px;
+    height: 2px;
+  }
+  &:after {
+    top: 5px;
+    transition: top .3s cubic-bezier(.23,1,.32,1) .3s,transform .3s cubic-bezier(.23,1,.32,1);
+  }
+  &:before {
+    bottom: 5px;
+    transition: bottom .3s cubic-bezier(.23,1,.32,1) .3s,transform .3s cubic-bezier(.23,1,.32,1);
+  }
+  display: block;
+  margin: 0 auto;
+}
+
+.activeMenuLines {
+  @extend .lines;
+  bottom: 0;
+  width: 16px;
+  transition: bottom .3s cubic-bezier(.23,1,.32,1),transform .3s cubic-bezier(.23,1,.32,1) .3s;
+  background: transparent;  
+  &:before {
+    bottom: 0;
+    transform: rotate(-45deg);
+    transition: bottom .3s cubic-bezier(.23,1,.32,1),transform .3s cubic-bezier(.23,1,.32,1) .3s;
+    width: 16px;
+  }
+  &:after {
+    top: 0;
+    transform: rotate(45deg);
+    transition: top .3s cubic-bezier(.23,1,.32,1),transform .3s cubic-bezier(.23,1,.32,1) .3s;
+    width: 16px;
+  }  
+}
