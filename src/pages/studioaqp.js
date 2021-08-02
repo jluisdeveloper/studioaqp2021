@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 
 import Header from '../components/header/header'
 import HomePage from '../components/home/HomePage'
+import PortfolioPage from '../components/portfolio/portfolio'
 
 const StudioAQP = () => { 
   const [navStatus, setNavStatus] = useState(true)  
@@ -26,9 +27,9 @@ const StudioAQP = () => {
       />
       <main>
         <HomePage />
+        <PortfolioPage />
       </main>
 
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     </div>
   )
 }
