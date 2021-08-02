@@ -1,5 +1,5 @@
 import React from 'react'
-import './styles/button.scss'
+import '../styles/button.scss'
 
 const NavButton = (props) => {
   const { navStatus, handleChangeMenu, toggleMenu } = props

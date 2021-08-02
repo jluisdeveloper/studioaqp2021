@@ -1,42 +1,5 @@
 @import '../../../stylesheets/variables.scss';
 
-.header_main{ 
-  opacity: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 200;
-  padding: 0;
-  transition: opacity .15s ease-in-out;
-}
-
-.header_container {
-  margin: 0 auto;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  margin-top: 63px;
-  padding-left: 213px;
-  padding-right: 120px;
-}
-
-.navigation { 
-  transform: none!important;
-  background: $blue;
-  display: block;
-  height: auto;
-  z-index: 101;
-  width: 130px;
-  max-width: 130px;
-  min-width: 130px;
-  transition: all .4s;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 .menu_out {
   position: fixed;
   top: 0;
@@ -150,8 +113,6 @@
   }
 }
 
-//  LOGO POSITION IN OVERLAY AND outside
-
 .logo_in_overlay_menu {
   position: absolute;
   top: 63px;
@@ -164,6 +125,8 @@
   img {
     height: 25px;
     display: block;
+    -webkit-filter: drop-shadow(5px 5px 5px #000);
+    filter: drop-shadow(5px 5px 5px #000);
   }
 }
 
@@ -171,19 +134,4 @@
   @extend .menu_item;
   transition-delay: .55s;
   transform: translateZ(0);
-}
-
-.logo_inner_title {
-  margin-top: 0;
-  a {
-    transition: opacity .15s ease-in-out;
-    display: block;
-    &:hover{
-      opacity: .5;
-    }
-    img {
-      height: 25px;
-      display: block;
-    }
-  }
 }

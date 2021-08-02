@@ -1,8 +1,8 @@
 import React from 'react'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
-import socialLinks from '../../socialLinks'
+import socialLinks from '../../../socialLinks'
 
-import './styles/social.scss'
+import '../styles/social.scss'
 
 const SocialBar = () => {
   const { studioLinks } = socialLinks()

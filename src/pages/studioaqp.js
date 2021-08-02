@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react'
-import LateralMenu from '../components/navigation/navbar'
 
-const HomePage = () => {
-  const [navStatus, setNavStatus] = useState(true)
+import Header from '../components/header/header'
+import HomePage from '../components/home/HomePage'
+
+const StudioAQP = () => { 
+  const [navStatus, setNavStatus] = useState(true)  
 
   const updateShowNav = () => {
     setNavStatus(window.pageYOffset > 0 ? false : true);
@@ -19,12 +21,16 @@ const HomePage = () => {
   });
   return (
     <div>
-      <LateralMenu 
+      <Header 
         navStatus= { navStatus }
       />
+      <main>
+        <HomePage />
+      </main>
+
       <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     </div>
   )
 }
 
-export default HomePage
+export default StudioAQP
