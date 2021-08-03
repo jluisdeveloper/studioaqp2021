@@ -6,6 +6,7 @@ import NavButton from './modules/button'
 import MenuOverlay from './modules/overlay'
 
 import './styles/header.scss'
+import './styles/responsive.scss'
 
 const Header = (props) => {
   const { navStatus } = props  // para los estilos de estiramiento
@@ -16,7 +17,7 @@ const Header = (props) => {
   }
 
   return (
-    <header className="header_main ">
+    <header className="header_main">
       <div className="header_container" >
         <div className="navigation" style={ navStatus ? { height: "100vh" } : { height: "100px" } } > 
           <NavButton

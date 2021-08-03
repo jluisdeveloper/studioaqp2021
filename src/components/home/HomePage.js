@@ -18,8 +18,8 @@ const HomePage = () => {
       onMouseMove={({ clientX: x, clientY: y }) => setMove({ xy: calc(x, y) })}
     >
       <div className="content" >
-        <LeftSection  move = { move } />
-        <RightSection/>
+        <LeftSection move={move} />
+        <RightSection />
       </div>
     </div>
   )

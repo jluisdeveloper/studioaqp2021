@@ -1,0 +1,58 @@
+@import '../../../stylesheets/variables.scss';
+
+@media (max-width: 975px){
+  .header_container{
+    margin-top: 0;
+    padding: 0;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  .navigation {
+    height: 85px!important;
+    width: 85px;
+    position: relative;
+    min-width: 0;
+  }
+
+  .toggle_menu {
+    height: 85px!important;
+    width: 85px!important;
+  }
+
+}
+
+
+@media (max-width: 768px){
+  .header_main {
+    position: relative;
+  }
+
+  .header_container {
+    background-color: $black;
+  }
+
+  .navigation {
+    width: 65px;
+    height: 60px!important;
+  }
+  .toggle_menu{
+    width: 65px!important;
+    height: 60px!important;
+  }
+}
+
+@media (max-width: 975px){
+  .logo_inner_title {
+    margin-left: 15px;
+    img {
+      height: 35px !important;
+      margin-bottom: -17px;
+    }
+  }
+}
+

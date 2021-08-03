@@ -61,7 +61,7 @@
     position: absolute;
     background: #fff;
     bottom: -25px;
-    width: 1px;
+    width: 2px;
     left: 50%;
     top: 50%;
     transition: bottom .4s;
@@ -69,15 +69,15 @@
   &:after {
     content: "";
     display: block;
-    width: 4px;
-    height: 4px;
-    border-bottom: 1px solid #fff;
-    border-right: 1px solid #fff;
+    width: 8px;
+    height: 8px;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
     transform: rotate(45deg);
     bottom: -25px;
     position: absolute;
     left: 50%;
-    margin-left: -2px;
+    margin-left: -3.6px;
     opacity: 1;
   }
 }

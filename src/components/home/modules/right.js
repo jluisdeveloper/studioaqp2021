@@ -11,10 +11,10 @@ const RightSection = () => {
             Despegar, Crecer. <br />
             Lanzar.
           </h2>
-        </div>
-        <span className="arrow_bottom" >
-        </span>
+        </div>        
       </div>
+      <span className="arrow_bottom" >
+      </span>
     </div>
   )
 }

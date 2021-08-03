@@ -19,19 +19,19 @@ const MenuOverlay = (props) => {
             <a href="#home" className={ toggleMenu ? "menu_item_active" : "menu_item" } onClick={ ()=>setTimeout( () => handleChangeMenu(), 300 ) } > Inicio </a>
           </div>
           <div className={ toggleMenu ? "menu_item_container_active" : "menu_item_container" }>
-            <a href="#portfolio" className={ toggleMenu ? "menu_item_active" : "menu_item"} onClick={ ()=>setTimeout( () => handleChangeMenu(), 300 ) } > Proyectos Realizados </a>
+            <a href="#portfolio" className={ toggleMenu ? "menu_item_active" : "menu_item"} onClick={ ()=>setTimeout( () => handleChangeMenu(), 300 ) } > Portafolio </a>
           </div>
           <div className={ toggleMenu ? "menu_item_container_active" : "menu_item_container" }>
-            <a href="#philosophy" className={ toggleMenu ? "menu_item_active" : "menu_item"} onClick={ ()=>setTimeout( () => handleChangeMenu(), 300 ) } > Nuestra Filosofia </a>
+            <a href="#philosophy" className={ toggleMenu ? "menu_item_active" : "menu_item"} onClick={ ()=>setTimeout( () => handleChangeMenu(), 300 ) } > Filosofia </a>
           </div>
           <div className={ toggleMenu ? "menu_item_container_active" : "menu_item_container" }>
-            <a href="#blog" className={ toggleMenu ? "menu_item_active" : "menu_item"} onClick={ ()=>setTimeout( () => handleChangeMenu(), 300 ) } > Blog StudioAQP </a>
+            <a href="#blog" className={ toggleMenu ? "menu_item_active" : "menu_item"} onClick={ ()=>setTimeout( () => handleChangeMenu(), 300 ) } > Blog </a>
           </div>
           <div className={ toggleMenu ? "menu_item_container_active" : "menu_item_container" }>
-            <a href="#services" className={ toggleMenu ? "menu_item_active" : "menu_item"} onClick={ ()=>setTimeout( () => handleChangeMenu(), 300 ) } > Servicios de StudioAQP </a>
+            <a href="#services" className={ toggleMenu ? "menu_item_active" : "menu_item"} onClick={ ()=>setTimeout( () => handleChangeMenu(), 300 ) } > Servicios </a>
           </div>
           <div className={ toggleMenu ? "menu_item_container_active" : "menu_item_container" }>
-            <a href="#contact" className={ toggleMenu ? "menu_item_active" : "menu_item"} onClick={ ()=>setTimeout( () => handleChangeMenu(), 300 ) } > Contacta a StudioAQP </a>
+            <a href="#contact" className={ toggleMenu ? "menu_item_active" : "menu_item"} onClick={ ()=>setTimeout( () => handleChangeMenu(), 300 ) } > Contacto </a>
           </div>
         </nav>
       </div>
