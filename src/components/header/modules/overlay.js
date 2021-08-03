@@ -8,7 +8,7 @@ const MenuOverlay = (props) => {
 
   return (
     <div className={ toggleMenu ? "menu_out_active" : "menu_out" } style={ navStatus ? { height: "100vh" } : { height: "0px" } } > 
-      <div className={ toggleMenu ? "menu_overlay_active" : "menu_overlay" } > </div>
+      <div className={ toggleMenu ? "menu_overlay_active" : "menu_overlay" } onClick={ ()=>handleChangeMenu() } > </div>
 
       <div className="menu_inner" >
         <Link to="/" className="logo_in_overlay_menu" >
