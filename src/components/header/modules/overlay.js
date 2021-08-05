@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link as goRoute } from 'react-router-dom'
+import { Link } from 'react-scroll'
 
 import '../styles/overlay.scss'
 
@@ -11,27 +12,28 @@ const MenuOverlay = (props) => {
       <div className={ toggleMenu ? "menu_overlay_active" : "menu_overlay" } onClick={ ()=>handleChangeMenu() } > </div>
 
       <div className="menu_inner" >
-        <Link to="/" className="logo_in_overlay_menu" >
+        <goRoute to="/" className="logo_in_overlay_menu" >
           <img src="./img/logo-studioaqp-blanco.png" alt="studioaqp" />
-        </Link>
+        </goRoute>
         <nav>
           <div className={ toggleMenu ? "menu_item_container_active" : "menu_item_container" }>
-            <a href="#home" className={ toggleMenu ? "menu_item_active" : "menu_item" } onClick={ ()=>setTimeout( () => handleChangeMenu(), 300 ) } > Inicio </a>
+            
+            <Link to="home" className={ toggleMenu ? "menu_item_active" : "menu_item" } smooth={true} duration={300} onClick={ ()=>setTimeout( () => handleChangeMenu(), 400 ) } > Inicio </Link>
           </div>
           <div className={ toggleMenu ? "menu_item_container_active" : "menu_item_container" }>
-            <a href="#portfolio" className={ toggleMenu ? "menu_item_active" : "menu_item"} onClick={ ()=>setTimeout( () => handleChangeMenu(), 300 ) } > Portafolio </a>
+            <Link to="portfolio" className={ toggleMenu ? "menu_item_active" : "menu_item"} smooth={true} duration={300} onClick={ ()=>setTimeout( () => handleChangeMenu(), 400 ) } > Portafolio </Link>
           </div>
           <div className={ toggleMenu ? "menu_item_container_active" : "menu_item_container" }>
-            <a href="#philosophy" className={ toggleMenu ? "menu_item_active" : "menu_item"} onClick={ ()=>setTimeout( () => handleChangeMenu(), 300 ) } > Filosofia </a>
+            <Link to="philosophy" className={ toggleMenu ? "menu_item_active" : "menu_item"} smooth={true} duration={300} onClick={ ()=>setTimeout( () => handleChangeMenu(), 400 ) } > Filosofia </Link>
           </div>
           <div className={ toggleMenu ? "menu_item_container_active" : "menu_item_container" }>
-            <a href="#blog" className={ toggleMenu ? "menu_item_active" : "menu_item"} onClick={ ()=>setTimeout( () => handleChangeMenu(), 300 ) } > Blog </a>
+            <Link to="blog" className={ toggleMenu ? "menu_item_active" : "menu_item"} smooth={true} duration={300} onClick={ ()=>setTimeout( () => handleChangeMenu(), 400 ) } > Blog </Link>
           </div>
           <div className={ toggleMenu ? "menu_item_container_active" : "menu_item_container" }>
-            <a href="#services" className={ toggleMenu ? "menu_item_active" : "menu_item"} onClick={ ()=>setTimeout( () => handleChangeMenu(), 300 ) } > Servicios </a>
+            <Link to="services" className={ toggleMenu ? "menu_item_active" : "menu_item"} smooth={true} duration={300} onClick={ ()=>setTimeout( () => handleChangeMenu(), 400 ) } > Servicios </Link>
           </div>
           <div className={ toggleMenu ? "menu_item_container_active" : "menu_item_container" }>
-            <a href="#contact" className={ toggleMenu ? "menu_item_active" : "menu_item"} onClick={ ()=>setTimeout( () => handleChangeMenu(), 300 ) } > Contacto </a>
+            <Link to="contact" className={ toggleMenu ? "menu_item_active" : "menu_item"} smooth={true} duration={300} onClick={ ()=>setTimeout( () => handleChangeMenu(), 400 ) } > Contacto </Link>
           </div>
         </nav>
       </div>

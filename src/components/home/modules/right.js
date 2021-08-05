@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-scroll'
 import '../styles/right.scss'
 
 const RightSection = () => {
@@ -13,8 +14,8 @@ const RightSection = () => {
           </h2>
         </div>        
       </div>
-      <span className="arrow_bottom" >
-      </span>
+      <Link to="portfolio" smooth={true} duration={1000} ><span className="arrow_bottom" >
+      </span></Link>
     </div>
   )
 }

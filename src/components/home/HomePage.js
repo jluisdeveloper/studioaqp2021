@@ -13,7 +13,6 @@ const HomePage = () => {
 
   return (
     <div
-      id="home"
       className="home_wrapper"
       onMouseMove={({ clientX: x, clientY: y }) => setMove({ xy: calc(x, y) })}
     >

@@ -21,7 +21,7 @@ const StudioAQP = () => {
     };
   });
   return (
-    <div>
+    <div id="home" >
       <Header 
         navStatus= { navStatus }
       />
