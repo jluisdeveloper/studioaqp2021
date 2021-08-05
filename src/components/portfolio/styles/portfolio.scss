@@ -1,0 +1,61 @@
+@import '../../../stylesheets/variables.scss';
+
+.portfolio_container{ 
+  height: 100vh;
+  background-color: $black-second;
+  width: 100%;
+  position: relative;
+}
+
+.portfolio_intro_container {
+  height: 200px;
+  min-height: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio_wrapper_text {
+  display: grid;
+  grid-template-columns: 4fr 8fr ;
+  margin-top: 70px;
+  width: 80%;
+  column-gap: 3em;
+}
+
+.portfolio_intro_title_wrapper {
+  display: flex;
+  align-items: center;
+  line-height: 33px;
+}
+
+.portfolio_intro_title {
+  color: $white;
+  font-family: $oswald;
+  font-size: 30px;
+  .strong_std {
+    color: $blue ;
+  }
+}
+
+.portfolio_intro_text_wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.portfolio_intro_text {
+  color: $white;
+  font-family: $poppins;
+  font-size: 12px;
+  text-align: justify;
+}
+
+@media (max-width: 768px){
+  .portfolio_wrapper_text {
+    grid-template-columns: 12fr;
+  }
+
+}
+
+@media (max-width: 975px){
+
+}

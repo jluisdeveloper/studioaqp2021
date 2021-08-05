@@ -68,6 +68,7 @@
 @media (max-width: 975px){
   .home_wrapper {
     min-height: 0;
+    height: auto;
   }
   .left_section {
     padding-left: 0;
@@ -91,7 +92,7 @@
 
 @media (max-width: 1100px){
   .home_wrapper {
-    min-height: 900px;
+    min-height: 0;
   }
   .description_title {
     font-size: 45px;
