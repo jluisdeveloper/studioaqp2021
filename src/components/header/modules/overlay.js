@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link as goRoute } from 'react-router-dom'
 import { Link } from 'react-scroll'
 
 import '../styles/overlay.scss'
@@ -12,12 +11,11 @@ const MenuOverlay = (props) => {
       <div className={ toggleMenu ? "menu_overlay_active" : "menu_overlay" } onClick={ ()=>handleChangeMenu() } > </div>
 
       <div className="menu_inner" >
-        <goRoute to="/" className="logo_in_overlay_menu" >
+        <a href="/" className="logo_in_overlay_menu" >
           <img src="./img/logo-studioaqp-blanco.png" alt="studioaqp" />
-        </goRoute>
+        </a>
         <nav>
-          <div className={ toggleMenu ? "menu_item_container_active" : "menu_item_container" }>
-            
+          <div className={ toggleMenu ? "menu_item_container_active" : "menu_item_container" }>            
             <Link to="home" className={ toggleMenu ? "menu_item_active" : "menu_item" } smooth={true} duration={300} onClick={ ()=>setTimeout( () => handleChangeMenu(), 400 ) } > Inicio </Link>
           </div>
           <div className={ toggleMenu ? "menu_item_container_active" : "menu_item_container" }>

@@ -4,8 +4,7 @@ import './styles/portfolio.scss'
 
 const PortfolioPage = () => {
   return (
-    <div
-      id="portfolio"
+    <div      
       className="portfolio_container"
     >
       <div className="portfolio_intro_container" >
