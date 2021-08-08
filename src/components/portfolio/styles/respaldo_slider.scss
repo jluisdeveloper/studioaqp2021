@@ -1,0 +1,143 @@
+.slider_section_row {     //      block block--bg-image-scroller bg-image-scroller is-dark is-inview
+  background-color: transparent;
+  position: relative;
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+}
+
+.bg_image_wrap {        //      bg-image-scroller__wrap
+  opacity: 1;
+  transition-delay: .15s;
+  transition: opacity .4s ease;
+}
+
+.portfolio_content {      //    bg-image-scroller__content
+  padding-bottom: 1.875rem;
+  span {
+    display: block;
+    position: relative;
+    margin-bottom: .75rem;
+    font-size: .95rem;
+    line-height: .75rem;
+    letter-spacing: .0125rem;
+    text-transform: uppercase;
+    color: $white;
+    font-family: $poppins;
+  }
+  h3 {
+    font-family: $oswald;
+    color: $white;
+    font-size: 25px;
+    line-height: 27px;
+  }
+  p {
+    font-family: $poppins;
+    color: $white;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: justify;
+  }
+
+  a {
+    margin-top: 2.5rem;
+    color: #fff;
+    border-color: #fff;
+    border: .0625rem solid;
+    padding: 0 1.125rem;
+    min-width: 11.25rem;
+    height: 3.125rem;
+    font-size: .875rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    appearance: none;
+    cursor: pointer;
+    text-align: center;
+    background-color: transparent;
+    transition: color .25s ease,background-color .25s ease,border .25s ease,box-shadow .25s ease,padding .25s ease;
+    text-decoration: none;
+  }
+}
+
+.portfolio_flickity_container {   //js-bg-image-scroller slider flickity-enabled is-draggable
+  display: block;
+  width: 100%;
+}
+
+.slide_apart {
+  width: 33%;
+
+  .cover {
+    height: 400px;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+
+
+
+
+@media (max-width: 768px){
+  .portfolio_wrapper_text {
+    grid-template-columns: 12fr;
+  }
+}
+
+@media (max-width: 975px){
+
+}
+
+@media (min-width: 768px){
+  /* SLIDER */
+  .bg_image_wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .portfolio_content {
+    position: relative;
+    width: 25%;
+    max-width: 100%;
+    z-index: 5;
+    padding-right: 2.5rem;
+  }
+
+  .portfolio_pre_header {
+    font-size: .875rem;
+    line-height: .875rem;
+    letter-spacing: .0125rem;
+  }
+
+  .portfolio_flickity_container {
+    width: calc(66.6667vw - 59px);
+    z-index: 1;
+  }
+}
+
+
+  
+
+@media (min-width: 1024px){
+  .slider_section_row {
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+  }
+  .portfolio_wrapper_text {
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+  }
+
+  .bg_image_wrap {
+    margin-left: 4.375rem;
+    margin-right: 0;
+  }
+
+  
+}

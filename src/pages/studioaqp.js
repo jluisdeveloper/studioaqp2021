@@ -38,6 +38,7 @@ const StudioAQP = () => {
         >
           <HomePage />
         </LazyLoad>
+        
         <div id="portfolio">
           <LazyLoad 
             once={true}
@@ -49,7 +50,8 @@ const StudioAQP = () => {
             <PortfolioPage />
           </LazyLoad>
         </div>
-        
+        <br/> <br/> <br/> <br/> <br/> <br/><br/> <br/> <br/> <br/> <br/> <br/><br/> <br/> <br/> <br/> <br/> <br/><br/> <br/> <br/> <br/> <br/> <br/>
+        <br/> <br/> <br/> <br/> <br/> <br/><br/> <br/> <br/> <br/> <br/> <br/><br/> <br/> <br/> <br/> <br/> <br/><br/> <br/> <br/> <br/> <br/> <br/>
       </main>
 
     </div>
