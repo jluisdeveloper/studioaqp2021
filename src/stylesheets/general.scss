@@ -32,3 +32,20 @@ main {
   opacity: 1;
   transition: opacity .15s ease-in-out;
 }
+
+.btn_outline {
+  background-color: transparent;
+  border: solid 2px #FFFFFF;
+  padding: 8px;
+  font-family: 'Poppins', sans-serif;
+  transition: ease all .3s;
+  font-size: 12px;
+  svg {
+    margin-left: 20px;
+  }
+  &:hover {
+    border: solid 2px rgba($color: #FFF, $alpha: .5);
+    color: rgba($color: #FFF, $alpha: .5);
+  }
+
+}

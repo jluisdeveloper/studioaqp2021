@@ -22,7 +22,7 @@ const MenuOverlay = (props) => {
             <Link to="portfolio" className={ toggleMenu ? "menu_item_active" : "menu_item"} smooth={true} duration={300} onClick={ ()=>setTimeout( () => handleChangeMenu(), 400 ) } > Portafolio </Link>
           </div>
           <div className={ toggleMenu ? "menu_item_container_active" : "menu_item_container" }>
-            <Link to="philosophy" className={ toggleMenu ? "menu_item_active" : "menu_item"} smooth={true} duration={300} onClick={ ()=>setTimeout( () => handleChangeMenu(), 400 ) } > Filosofia </Link>
+            <Link to="juntos" className={ toggleMenu ? "menu_item_active" : "menu_item"} smooth={true} duration={300} onClick={ ()=>setTimeout( () => handleChangeMenu(), 400 ) } > Filosofia </Link>
           </div>
           <div className={ toggleMenu ? "menu_item_container_active" : "menu_item_container" }>
             <Link to="blog" className={ toggleMenu ? "menu_item_active" : "menu_item"} smooth={true} duration={300} onClick={ ()=>setTimeout( () => handleChangeMenu(), 400 ) } > Blog </Link>

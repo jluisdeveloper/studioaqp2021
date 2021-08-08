@@ -4,6 +4,7 @@ import Placeholder from '../components/loader/spiner'
 import Header from '../components/header/header'
 import HomePage from '../components/home/HomePage'
 import PortfolioPage from '../components/portfolio/portfolio'
+import TrabajemosJuntos from '../components/trabajemos/juntos';
 
 
 
@@ -50,8 +51,18 @@ const StudioAQP = () => {
             <PortfolioPage />
           </LazyLoad>
         </div>
-        <br/> <br/> <br/> <br/> <br/> <br/><br/> <br/> <br/> <br/> <br/> <br/><br/> <br/> <br/> <br/> <br/> <br/><br/> <br/> <br/> <br/> <br/> <br/>
-        <br/> <br/> <br/> <br/> <br/> <br/><br/> <br/> <br/> <br/> <br/> <br/><br/> <br/> <br/> <br/> <br/> <br/><br/> <br/> <br/> <br/> <br/> <br/>
+
+        <div id="juntos">          
+          <LazyLoad 
+            once={true}
+            height={200}
+            offset={[-200, 0]}
+            placeholder={<Placeholder />}
+            debounce={500}           
+          >
+          <TrabajemosJuntos/>
+          </LazyLoad>
+        </div>
       </main>
 
     </div>

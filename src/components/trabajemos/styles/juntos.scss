@@ -1,0 +1,65 @@
+@import '../../../stylesheets/variables.scss';
+
+.juntos_container {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.juntos_layer_black {
+  background-color: rgba($color: #000000, $alpha: .7);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+}
+
+.juntos_wrapper {  
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  // background-color: salmon;
+  width: 80%;
+}
+
+.juntos_text_wrapper {
+  color: $white;
+  h2 {
+    font-size: 33px;
+    font-family: $oswald;
+    line-height: 30px;
+  }
+  p {
+    font-size: 12px;
+    line-height: 14px;
+    font-family: $poppins;
+    font-weight: 500;
+    text-align: justify;
+    margin-bottom: 40px;
+  }
+}
+
+.juntos_bg_parallax {
+  background-image: url("https://studio-front.s3.amazonaws.com/trabajemos_juntos.jpg");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: -35px;
+  bottom: -35px;
+  left: -35px;
+  right: -35px;
+}
+
+@media (max-width: 768px){
+  .juntos_wrapper {
+    grid-template-columns: 12fr;
+  }
+  .juntos_text_wrapper {
+    h2 {
+      font-size: 25px;
+      line-height: 25px;
+    }
+  }
+}
