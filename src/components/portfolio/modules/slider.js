@@ -20,8 +20,6 @@ class PortfolioSlider extends Component {
     }
   }
 
-
-
   componentDidMount = () => {
     this.dumpLol()
   }
