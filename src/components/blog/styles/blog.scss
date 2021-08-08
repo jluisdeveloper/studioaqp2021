@@ -79,6 +79,7 @@
     height: 100%;
     background-position-x: center;
     background-position-y: bottom;
+    background-size: cover;
   }
   .blog_body {
     // background-color: turquoise;
@@ -126,3 +127,48 @@
     cursor: pointer;
   }
 }
+
+@media (max-width: 767px){
+  .blog_container {
+    height: auto;
+  }
+
+  .intro_blog_layer {
+    grid-template-columns: 12fr;
+    margin-top: 50px;
+  }
+
+  .blog_slider_wrapper {
+    margin-top: 50px;
+  }
+  .post_cell_blog {
+    width: 100%;
+    background-color: transparent;
+  }
+
+  .post_container_blog {
+    grid-template-columns: 12fr;
+  }
+  .blog_body_text_wrapper {
+    width: 80%;
+    margin: 0 auto;
+    a {
+      text-align: left !important;
+    }
+  }
+
+  .post_container_blog {
+    .cover_post_blog {
+      height: 100vh;
+      opacity: .3;
+      background-size: cover;
+    }
+    .blog_body {
+      margin-top: -60%;
+      opacity: 1;
+    }
+  }
+
+}
+
+
