@@ -1,10 +1,10 @@
-# Getting Started with Create React App
+# StudioAQP
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Proyecto front-end de [StudioAQP - WEB](https://studioaqp.com).
 
-## Available Scripts
+## Maqueta de componentes
 
-In the project directory, you can run:
+Maquetado en Draw.io:
 
 ### `yarn start`
 

@@ -1,0 +1,128 @@
+@import '../../../stylesheets/variables.scss';
+
+.blog_container {
+  height: 100vh;
+  background-color: $black-second;
+}
+
+.intro_blog_wrapper {
+  // background-color: salmon;
+  height: 35%;
+  display: flex;
+  align-items: center;
+  width: 80%;  
+  margin: 0 auto;
+}
+
+.intro_blog_layer {
+  // background-color: slateblue;
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+  column-gap: 3em;
+}
+
+.intro_text_wrapper{
+  // background-color: teal;
+  color: $white;
+  span {
+    text-transform: uppercase;
+    font-family: $poppins;
+    font-weight: 300;
+    font-size: 12px;
+  }
+  h2 {
+    font-family: $oswald;
+    margin-top: -10px;
+    font-size: 25px;
+  }
+  p {
+    font-size: 12px;
+    font-family: $poppins;
+    line-height: 13px;
+    font-weight: 400;
+    margin-top: -10px;
+    text-align: justify;
+  }
+}
+
+.btn_container {
+  display: flex;
+  align-items: center;
+}
+
+/*        SLIDER BLOG       */
+.blog_slider_wrapper {
+  height: 57%;
+}
+
+.carousel-blog {
+  height: 100%;
+  // margin: 10% 0 -10% 0;
+  overflow: hidden;
+}
+
+.post_cell_blog {
+  width: 80%;
+  height: 100vh;
+  background-color: $blue;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.post_container_blog {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  column-gap: 2em;
+  height: 100%;
+  .cover_post_blog {
+    width: 100%;
+    height: 100%;
+    background-position-x: center;
+    background-position-y: bottom;
+  }
+  .blog_body {
+    // background-color: turquoise;
+    height: 61%;
+    display: flex;
+    align-items: center;
+    .blog_body_text_wrapper {
+      // background-color: violet;
+      color: $white;
+      span {
+        font-family: $poppins;
+        font-size: 12px;
+      }
+      h3 {
+        font-family: $oswald;
+        font-size: 20px;
+        line-height: 22px;
+        margin-top: 0;
+      }
+      p {
+        font-family: $poppins;
+        font-size: 12px;
+        font-weight: 500;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+.blog_navigation_slider_buttons {
+  // background-color: $black;
+  margin-top: 15px;  
+  text-align: center;
+  color: $white;
+  .prev_post {
+    cursor: pointer;
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+  .current_slide_of {
+    margin: 0 30px;
+  }
+  .next_post {
+    cursor: pointer;
+  }
+}
