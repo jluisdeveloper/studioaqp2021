@@ -223,7 +223,7 @@
   }
   .slider_portfolio_wrapper {
     display: grid;
-    grid-template-columns: 5fr 7fr;
+    grid-template-columns: 4fr 8fr;
     height: 80%;
   }
   .slide_cell {
@@ -245,5 +245,16 @@
 
   .portfolio_wrapper_slider {
     height: 100%;
+  }
+}
+
+/*    IPAD PRO FIX  */
+
+@media (min-width: 1024px) and (max-width: 1050px) {
+  .layer_bg_loop {
+    display: none;
+  }
+  .portfolio_wrapper_slider {
+    height: auto;
   }
 }

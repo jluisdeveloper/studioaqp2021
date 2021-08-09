@@ -27,9 +27,13 @@
 .juntos_text_wrapper {
   color: $white;
   h2 {
-    font-size: 33px;
+    font-size: 30px;
     font-family: $oswald;
-    line-height: 30px;
+    line-height: 27px;
+    strong {
+      color: $blue;
+      text-transform: uppercase;
+    }
   }
   p {
     font-size: 12px;
@@ -58,8 +62,8 @@
   }
   .juntos_text_wrapper {
     h2 {
-      font-size: 25px;
-      line-height: 25px;
+      font-size: 19px;
+      line-height: 19px;
     }
   }
 }
