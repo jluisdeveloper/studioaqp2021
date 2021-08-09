@@ -6,6 +6,7 @@ import HomePage from '../components/home/HomePage'
 import PortfolioPage from '../components/portfolio/portfolio'
 import TrabajemosJuntos from '../components/trabajemos/juntos';
 import Blog from '../components/blog/blog';
+import Services from '../components/services/services';
 
 
 const StudioAQP = () => { 
@@ -73,6 +74,18 @@ const StudioAQP = () => {
             debounce={500}           
           >
             <Blog/>
+          </LazyLoad>
+        </div>
+
+        <div id="services">          
+          <LazyLoad 
+            once={true}
+            height={200}
+            offset={[-200, 0]}
+            placeholder={<Placeholder />}
+            debounce={500}           
+          >
+            <Services/>
           </LazyLoad>
         </div>
       </main>
