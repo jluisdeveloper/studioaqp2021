@@ -1,13 +1,14 @@
 
 import React from 'react';
+import './spiner.scss'
 
 export default function Placeholder() {
   return (
-    <div className="placeholder" style={{height: '100vh', background: 'red'}}>
-      <div className="spinner">
-        <h1>
-          CARGANDO CONFIGURAR MAS TARDE ESTE LOADER
-        </h1>
+    <div className="placeholder">
+      <div class="u-loading">
+        <div class="u-loading__symbol">
+          <img src="./isotipo_blanco.png" alt="studioaqp"/>
+        </div>
       </div>
     </div>
   );
