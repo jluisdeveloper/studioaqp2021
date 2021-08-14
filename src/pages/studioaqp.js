@@ -7,6 +7,7 @@ import PortfolioPage from '../components/portfolio/portfolio'
 import TrabajemosJuntos from '../components/trabajemos/juntos';
 import Blog from '../components/blog/blog';
 import Services from '../components/services/services';
+import Footer from '../components/footer/footer';
 
 
 const StudioAQP = () => { 
@@ -86,6 +87,18 @@ const StudioAQP = () => {
             debounce={500}           
           >
             <Services/>
+          </LazyLoad>
+        </div>
+
+        <div id="contacto">          
+          <LazyLoad 
+            once={true}
+            height={200}
+            offset={[-200, 0]}
+            placeholder={<Placeholder />}
+            debounce={500}           
+          >
+            <Footer/>
           </LazyLoad>
         </div>
       </main>
