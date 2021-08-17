@@ -7,7 +7,7 @@ export default function Placeholder() {
     <div className="placeholder">
       <div className="u-loading">
         <div className="u-loading__symbol">
-          <img src="./isotipo_blanco.png" alt="studioaqp"/>
+          <img src="https://studio-front.s3.amazonaws.com/isotipo_blanco.png" alt="studioaqp"/>
         </div>
       </div>
     </div>
