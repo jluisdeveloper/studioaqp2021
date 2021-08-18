@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import useCrud from '../hooks/useCrud'
+
+import Header from '../components/header/header'
 import SinglePortfolio from '../components/portfolio/single'
 
 const initialProject = {
@@ -44,8 +46,23 @@ const SingleProject = (props) => {
   const [project, setProject] = useState(initialProject)
   const slug_project = props.match.params.slug
   const url = `https://dashboard.studioaqp.com/front/${slug_project}`
-
   const { setData } = useCrud(url)
+
+  const [navStatus, setNavStatus] = useState(true)  
+
+  const updateShowNav = () => {
+    setNavStatus(window.pageYOffset > 0 ? false : true);
+  }
+
+  useEffect(() => {
+    function watchScroll() {
+      window.addEventListener("scroll", updateShowNav);
+    }
+    watchScroll();
+    return () => {
+      window.removeEventListener("scroll", updateShowNav);
+    };
+  });
 
   useEffect(() => {
     setData(setProject)
@@ -53,6 +70,10 @@ const SingleProject = (props) => {
 
   return (
     <div>
+    <Header 
+      navStatus= { navStatus }
+      menuType= 'newPage'
+    />
       <SinglePortfolio
         project={project}
       />

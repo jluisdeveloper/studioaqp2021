@@ -11,7 +11,7 @@ const App = () => {
       <Switch>
         <Route path="/" exact={true} name="index" component={StudioAQP} />
         <Route path="/proyectos/:slug" exact={true} name="index" component={SingleProject} />
-        <Route path="/post" exact={true} name="singlePost" component={SinglePostPage} />
+        <Route path="/blog/:slug" exact={true} name="singlePost" component={SinglePostPage} />
       </Switch>
     </BrowserRouter>
   )

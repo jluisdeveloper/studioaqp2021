@@ -1,8 +1,10 @@
 import React from 'react'
-import LazyLoad from 'react-lazyload';
-import Placeholder from '../loader/spiner';
-import SingleProjectSlider from './modules/single/slider'
+import LazyLoad from 'react-lazyload'
 import HTMLReactParser from 'html-react-parser'
+import RellaxWrapper from 'react-rellax-wrapper'
+
+import Placeholder from '../loader/spiner'
+import SingleProjectSlider from './modules/single/slider'
 import { normalizeDate } from '../../helpers/normalizes'
 
 import './styles/single.scss'
@@ -68,8 +70,9 @@ const SinglePortfolio = ({ project }) => {
       </LazyLoad>
 
       <div className="full_project_xplain_objetive">
-        <div className="wrapper_project_full_xplanation">          
-          <div className="project_xplain_text_container">
+        <div className="wrapper_project_full_xplanation">
+          <div className="project_xplain_text_container" id="lololo090">
+
             <div className="start_point_project_container">
               <div className="start_point">
                 {HTMLReactParser(project.start_point)}
@@ -79,12 +82,22 @@ const SinglePortfolio = ({ project }) => {
               </div>
             </div>
           </div>
+
+
           <div className="project_lateral_image_container">
-            <img src={project.lateral_img.url} alt={project.title} />
-          </div>
+            <RellaxWrapper speed={2} percentage={2}>
+              <img src={project.lateral_img.url} alt={project.title} />
+            </RellaxWrapper>
+          </div> 
+          
+          <div className="project_lateral_image_container only_mobile">
+              <img src={project.lateral_img.url} alt={project.title} />
+          </div> 
         </div>
       </div>
-
+      <div>
+        <h1>trololo</h1>
+      </div>
     </div>
   )
 }
