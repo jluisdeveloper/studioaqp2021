@@ -19,7 +19,7 @@ const MenuOverlayNewPage = (props) => {
             <Link to="/" className={ toggleMenu ? "menu_item_active" : "menu_item" } > Inicio </Link>
           </div>
           <div className={ toggleMenu ? "menu_item_container_active" : "menu_item_container" }>
-            <Link to="/portfalio" className={ toggleMenu ? "menu_item_active" : "menu_item"} > Portafolio </Link>
+            <Link to="/portfolio" className={ toggleMenu ? "menu_item_active" : "menu_item"} > Portafolio </Link>
           </div>
           <div className={ toggleMenu ? "menu_item_container_active" : "menu_item_container" }>
             <Link to="/nosotros" className={ toggleMenu ? "menu_item_active" : "menu_item"} > Nosotros </Link>

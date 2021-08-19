@@ -95,9 +95,6 @@ const SinglePortfolio = ({ project }) => {
           </div> 
         </div>
       </div>
-      <div>
-        <h1>trololo</h1>
-      </div>
     </div>
   )
 }
