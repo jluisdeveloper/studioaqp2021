@@ -3,6 +3,7 @@ import useCrud from '../hooks/useCrud'
 
 import Header from '../components/header/header'
 import SinglePortfolio from '../components/portfolio/single'
+import Footer from '../components/footer/footer'
 
 const initialProject = {
   id: 0,
@@ -43,12 +44,12 @@ const initialProject = {
 
 
 const SingleProject = (props) => {
-  const [project, setProject] = useState(initialProject)
+  const [projects, setProjects] = useState(initialProject)
   const slug_project = props.match.params.slug
   const url = `https://dashboard.studioaqp.com/front/${slug_project}`
   const { setData } = useCrud(url)
 
-  const [navStatus, setNavStatus] = useState(true)  
+  const [navStatus, setNavStatus] = useState(true)
 
   const updateShowNav = () => {
     setNavStatus(window.pageYOffset > 0 ? false : true);
@@ -65,18 +66,19 @@ const SingleProject = (props) => {
   });
 
   useEffect(() => {
-    setData(setProject)
+    setData(setProjects)
   }, [])
 
   return (
     <div>
-    <Header 
-      navStatus= { navStatus }
-      menuType= 'newPage'
-    />
-      <SinglePortfolio
-        project={project}
+      <Header
+        navStatus={navStatus}
+        menuType='newPage'
       />
+      <SinglePortfolio
+        project={projects}
+      />
+      <Footer/>
     </div>
   )
 }

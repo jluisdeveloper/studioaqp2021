@@ -28,7 +28,7 @@ const PortfolioPage = () => {
                 Todos nuestros proyectos estan orientados a brindar a nuestros clientes la satisfaccion de sus Paginas Web, Asi mismo apoyamos a todos nuestros clientes en el desarrollo de cada detalle de su Web desde los textos hasta las imagenes.
               </p>
               <br />
-              <a href="/" className="btn_outline">
+              <a href="/portafolio" className="btn_outline">
                 Ver todo
                 <svg xmlns="http://www.w3.org/2000/svg" width="27.001" height="10.018" viewBox="0 0 27.001 10.018"><g fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M0 5.123h25.553"></path><path d="M21.827.51l4.153 4.5-4.153 4.5"></path></g></svg>
               </a>

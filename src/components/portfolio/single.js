@@ -71,7 +71,7 @@ const SinglePortfolio = ({ project }) => {
 
       <div className="full_project_xplain_objetive">
         <div className="wrapper_project_full_xplanation">
-          <div className="project_xplain_text_container" id="lololo090">
+          <div className="project_xplain_text_container" id="">
 
             <div className="start_point_project_container">
               <div className="start_point">
