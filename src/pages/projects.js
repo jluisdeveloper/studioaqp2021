@@ -8,7 +8,7 @@ import Footer from '../components/footer/footer'
 
 import Placeholder from '../components/loader/spiner'
 
-const Projects = () => {
+const ProjectsPage = () => {
   const [projectsList, setProjectsList] = useState([])
   const url = `https://dashboard.studioaqp.com/front/projects/index`
   const { setData } = useCrud(url)
@@ -39,4 +39,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default ProjectsPage

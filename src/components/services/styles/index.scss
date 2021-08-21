@@ -1,0 +1,73 @@
+@import '../../../stylesheets/variables.scss';
+
+
+
+.services_page_wrapper {
+  width: 90%;
+  margin-left: 10%;
+}
+
+.title_services_page_wrapper {
+  width: 60%;
+  h2 {
+    font-size: 30px;
+    font-family: $oswald;
+  }
+}
+
+.divider_service {
+  height: 1px;
+  background-color: rgba($color: $black-second, $alpha: .3);
+}
+
+.apart_container {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  column-gap: 20px;
+  margin-bottom: 30px;
+}
+
+.body_apart_service_wrapper {
+  h1, h2, h3, p, span {
+    padding: 0;
+    margin: 0;
+  }
+  span {
+    font-family: $poppins;
+    font-size: 15px;
+    color: $grey;
+  }
+  h3 {
+    text-transform: uppercase;
+    font-family: $oswald;
+    font-weight: 400;
+    margin-top: -5px;
+  }
+  p {
+    font-family: $poppins;
+    font-size: 12px;
+    margin-top: 10px;
+    color: $grey;
+  }
+  ul {
+    font-family: $poppins;
+    font-size: 13px;
+    color: $grey;
+    margin-bottom: 30px;
+  }
+  .btn_outline_service {
+    text-transform: uppercase;
+    border: solid 1px $black;
+    padding: 5px 20px;
+    color: $black;
+    font-family: $poppins;
+    transition: all ease .3s;
+    svg {
+      margin-left: 20px;
+    }
+    &:hover {
+      color: $blue;
+      border: solid 1px $blue;
+    }
+  }
+}

@@ -43,7 +43,7 @@ const initialProject = {
 }
 
 
-const SingleProject = (props) => {
+const SingleProjectPage = (props) => {
   const [projects, setProjects] = useState(initialProject)
   const slug_project = props.match.params.slug
   const url = `https://dashboard.studioaqp.com/front/${slug_project}`
@@ -83,4 +83,4 @@ const SingleProject = (props) => {
   )
 }
 
-export default SingleProject
+export default SingleProjectPage

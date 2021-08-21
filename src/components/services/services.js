@@ -4,8 +4,6 @@ import { Link } from 'react-router-dom'
 
 import './styles/services.scss'
 
-
-
 let flickityOptions = {
   initialIndex: 0,
   wrapAround: false,      // para no mostrar ni caer en inifintos slides

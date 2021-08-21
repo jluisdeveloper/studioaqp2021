@@ -11,6 +11,7 @@ const flickityOptions = {
   cellAlign: "left",
   prevNextButtons: false,
   adaptiveHeight: true,
+  lazyLoad: true,
   pageDots: false
 }
 
@@ -78,7 +79,7 @@ class PortfolioSlider extends Component {
                     <div className="slide_misc_container">
                       <h3> {slide.customer.name} </h3>
                       { ReactHtmlParser(slide.abstract) }
-                      <Link to={`/proyectos/${slide.slug}`} className="fast_link"> Ver proyecto </Link>
+                      <Link to={`/portafolio/${slide.slug}`} className="fast_link"> Ver proyecto </Link>
                     </div>
                   </div>
                 ))
