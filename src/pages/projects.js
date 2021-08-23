@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, {useEffect} from 'react'
 import LazyLoad from 'react-lazyload'
 
 import useCrud from '../hooks/useCrud'
@@ -9,14 +9,12 @@ import Footer from '../components/footer/footer'
 import Placeholder from '../components/loader/spiner'
 
 const ProjectsPage = () => {
-  const [projectsList, setProjectsList] = useState([])
   const url = `https://dashboard.studioaqp.com/front/projects/index`
-  const { setData } = useCrud(url)
+  const { data } = useCrud(url, [])
 
   useEffect(() => {
-    setData(setProjectsList)
+    window.scrollTo({ top: 0, behavior: 'smooth' })
   }, [])
-
 
   return (
     <div>
@@ -31,7 +29,7 @@ const ProjectsPage = () => {
         debounce={500}
       >
         <IndexPortfolio
-          projectsList={projectsList}
+          projectsList={data}
         />
       </LazyLoad>
       <Footer />

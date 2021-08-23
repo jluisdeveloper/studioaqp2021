@@ -22,7 +22,7 @@
 
 .apart_container {
   display: grid;
-  grid-template-columns: 6fr 6fr;
+  grid-template-columns: 7fr 5fr;
   column-gap: 20px;
   margin-bottom: 30px;
 }
@@ -71,3 +71,24 @@
     }
   }
 }
+
+@media (max-width: 767px){
+  .title_services_page_wrapper {
+    width: 100%;
+    h2 {
+      font-size: 20px;
+      font-weight: 500;
+    }
+  }
+
+  .apart_container {
+    grid-template-columns: 12fr;
+    row-gap: 20px;
+  }
+
+  .services_page_wrapper {
+    margin: 0 auto;
+  }
+
+}
+

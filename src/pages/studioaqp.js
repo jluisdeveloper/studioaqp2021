@@ -26,6 +26,11 @@ const StudioAQP = () => {
       window.removeEventListener("scroll", updateShowNav);
     };
   });
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }, [])
+
   return (
     <div id="home" >
       <Header 

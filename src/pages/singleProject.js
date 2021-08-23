@@ -42,12 +42,10 @@ const initialProject = {
   }
 }
 
-
 const SingleProjectPage = (props) => {
-  const [projects, setProjects] = useState(initialProject)
   const slug_project = props.match.params.slug
   const url = `https://dashboard.studioaqp.com/front/${slug_project}`
-  const { setData } = useCrud(url)
+  const { data } = useCrud(url, initialProject)
 
   const [navStatus, setNavStatus] = useState(true)
 
@@ -66,7 +64,7 @@ const SingleProjectPage = (props) => {
   });
 
   useEffect(() => {
-    setData(setProjects)
+    window.scrollTo({ top: 0, behavior: 'smooth' })
   }, [])
 
   return (
@@ -76,7 +74,7 @@ const SingleProjectPage = (props) => {
         menuType='newPage'
       />
       <SinglePortfolio
-        project={projects}
+        project={data}
       />
       <Footer/>
     </div>
