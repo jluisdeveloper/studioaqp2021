@@ -59,7 +59,7 @@ const Services = () => {
 
               <div className="services_hover_show_text">
                 <p>Diseño de Logotipos, Brochures, papeleria corporativa y mas!</p>
-                <Link to="/identidad-grafica">
+                <Link to="/servicios/identidad-grafica">
                   <svg xmlns="http://www.w3.org/2000/svg" width="27.001" height="10.018" viewBox="0 0 27.001 10.018"><g fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M0 5.123h25.553"></path><path d="M21.827.51l4.153 4.5-4.153 4.5"></path></g></svg>
                 </Link>
               </div>
@@ -79,7 +79,7 @@ const Services = () => {
 
               <div className="services_hover_show_text">
                 <p>Diseño de Logotipos, Brochures, papeleria corporativa y mas!</p>
-                <Link to="/desarrollo-web">
+                <Link to="/servicios/desarrollo-web">
                   <svg xmlns="http://www.w3.org/2000/svg" width="27.001" height="10.018" viewBox="0 0 27.001 10.018"><g fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M0 5.123h25.553"></path><path d="M21.827.51l4.153 4.5-4.153 4.5"></path></g></svg>
                 </Link>
               </div>
@@ -99,7 +99,7 @@ const Services = () => {
 
               <div className="services_hover_show_text">
                 <p>Diseño de Logotipos, Brochures, papeleria corporativa y mas!</p>
-                <Link to="/marketing-digital">
+                <Link to="/servicios/marketing-digital">
                   <svg xmlns="http://www.w3.org/2000/svg" width="27.001" height="10.018" viewBox="0 0 27.001 10.018"><g fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M0 5.123h25.553"></path><path d="M21.827.51l4.153 4.5-4.153 4.5"></path></g></svg>
                 </Link>
               </div>
@@ -120,7 +120,7 @@ const Services = () => {
               <div className="services_hover_show_text">
                 <p>Diseño de Logotipos, Brochures, papeleria corporativa y mas!</p>
 
-                <Link to="/redes-sociales">
+                <Link to="/servicios/redes-sociales">
                   <svg xmlns="http://www.w3.org/2000/svg" width="27.001" height="10.018" viewBox="0 0 27.001 10.018"><g fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M0 5.123h25.553"></path><path d="M21.827.51l4.153 4.5-4.153 4.5"></path></g></svg>
                 </Link>
               </div>
